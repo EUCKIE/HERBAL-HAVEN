@@ -1,0 +1,271 @@
+/* *********************************** */
+/* Extra Small Devices (Phones < 480px)*/
+/* *********************************** */
+@media (max-width: 30em) {
+  html {
+    font-size: 50%; /* Smaller font scaling */
+  }
+
+  .header {
+    height: 5.6rem;
+    padding: 0.8rem 1.6rem;
+  }
+
+  .logo {
+    height: 5rem;
+  }
+
+  .heading-primary {
+    font-size: 2.4rem;
+    line-height: 1.2;
+    margin: 2.4rem 0 2.4rem 0;
+  }
+
+  .hero-description {
+    font-size: 1.6rem;
+    padding-bottom: 4.8rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .hero-img img {
+    width: 100%;
+  }
+
+  .delivered-customers {
+    margin-top: 2.4rem;
+    gap: 1rem;
+  }
+
+  /**************************/
+  /* ABOUT SECTION */
+  /**************************/
+  .section-about {
+    padding: 2.4rem 0 1.2rem 0;
+  }
+  .about {
+    padding: 0 1.2rem;
+  }
+  .about-banner h2 {
+    padding: 1.2rem;
+    font-size: 3.2rem;
+  }
+  .story {
+    font-size: 1.6rem;
+    line-height: normal;
+  }
+  .roles {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.2rem;
+  }
+  .role-heading {
+    padding-top: 0.8rem;
+    font-size: 2rem;
+  }
+  .role-description {
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: normal;
+    padding-bottom: 0.8rem;
+  }
+  .vision-mission {
+    display: flex;
+    flex-direction: column;
+  }
+  .mission h2,
+  .vision h2 {
+    font-size: 2.2rem;
+  }
+  .mission p,
+  .vision p {
+    font-size: 1.6rem;
+    line-height: normal;
+    text-align: center;
+  }
+  
+  /* Values section */
+  .values {
+    grid-template-columns: 1fr;
+    margin: 2.4rem 1.2rem;
+  }
+  
+  .values-image-box img {
+    height: 40vh;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .values-heading {
+    font-size: 3.2rem;
+  }
+  
+  .value-item h2 {
+    font-size: 1.8rem;
+  }
+  
+  .value-item p {
+    font-size: 1.4rem;
+  }
+}
+/* **************************** */
+/* Mobile Phones (Below 544px) */
+/* **************************** */
+@media (max-width: 34em) {
+  .header {
+    width: 100%;
+    height: 6rem;
+    padding: 1rem 2rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #e3feec;
+    z-index: 999;
+  }
+
+  .logo {
+    margin-top: -1rem;
+    height: 5.5rem;
+  }
+
+  /* Hide nav and replace with hamburger */
+  .main-nav-list {
+    display: none;
+  }
+
+  .mobile-nav-menu {
+    display: block;
+  }
+  .mobile-nav-menu:hover,
+  .mobile-nav-menu:visited {
+    color: #1f4b2c;
+    transform: scale(1.1);
+  }
+
+  .section-hero {
+    padding: 2rem 1.2rem 6rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6.4rem;
+    text-align: center;
+  }
+
+  .hero {
+    padding: 0;
+    gap: 3.2rem;
+    grid-template-columns: 1fr;
+  }
+
+  .heading-primary {
+    font-size: 2.8rem;
+  }
+
+  .hero-description {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+
+  .hero-img img {
+    width: 85%;
+    max-width: 32rem;
+  }
+  
+  /* Names section */
+  .names-list {
+    gap: 2rem;
+    padding: 1.2rem 2.4rem;
+    font-size: 1.2rem;
+  }
+}
+
+/**************************/
+/* Tablets (Below 944px) */
+/**************************/
+@media (max-width: 59em) {
+  html {
+    font-size: 56.25%; /* 9px base font size */
+  }
+
+  .section-hero {
+    padding: 3.6rem 1.6rem 6.4rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 4rem;
+  }
+
+  .hero-text-box {
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+
+  .heading-primary {
+    font-size: 3.2rem;
+  }
+
+  .hero-description {
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+
+  .hero-img img {
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  /* About section */
+  .roles {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+  
+  .vision-mission {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+  
+  .values {
+    grid-template-columns: 1fr;
+  }
+  
+  .values-image-box img {
+    height: 50vh;
+    border-radius: 10px 10px 0 0;
+  }
+  .products{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+}
+
+/********************************/
+/* Laptops (Below 1200px wide)  */
+/********************************/
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .hero {
+    gap: 6.4rem;
+  }
+
+  .heading-primary {
+    font-size: 4.2rem;
+  }
+
+  .hero-description {
+    font-size: 1.9rem;
+  }
+  
+  /* About section */
+  .about {
+    padding: 0 3.2rem;
+  }
+  
+  .roles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
