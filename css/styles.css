@@ -697,26 +697,7 @@ body {
   opacity: 1;
 }
 
-.view-details {
-  color: #ffffff;
-  font-size: 1.6rem;
-  font-weight: 600;
-  text-decoration: none;
-  padding: 1rem 2rem;
-  border: 2px solid #ffffff;
-  border-radius: 8px;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
 
-.view-details:hover {
-  background: #ffffff;
-  color: #00b10c;
-  transform: scale(1.05);
-}
 
 .product-description h2 {
   padding: 2.4rem 0 0 1.6rem;
@@ -726,6 +707,7 @@ body {
 
 .product-description .description {
   padding: 0.4rem 0.6rem 1.2rem 1.6rem;
+  
   font-weight: 400;
   line-height: 2rem;
   text-align: left;
