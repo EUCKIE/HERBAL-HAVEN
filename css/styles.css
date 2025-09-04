@@ -697,8 +697,6 @@ body {
   opacity: 1;
 }
 
-
-
 .product-description h2 {
   padding: 2.4rem 0 0 1.6rem;
   font-size: 1.6rem;
@@ -707,7 +705,7 @@ body {
 
 .product-description .description {
   padding: 0.4rem 0.6rem 1.2rem 1.6rem;
-  
+
   font-weight: 400;
   line-height: 2rem;
   text-align: left;
@@ -749,15 +747,11 @@ body {
 /* *********************** */
 /* Testimonials */
 /* *********************** */
-.section-testimonials {
-  background-color: #e3feec;
-  padding: 4.8rem 0 4.8rem 0;
-}
 
 .testimonials-section {
   max-width: 130rem;
   margin: 0 auto;
-  padding: 0 6.2rem;
+  padding: 0 2.4rem;
   display: block;
   align-items: center;
 }
@@ -788,7 +782,7 @@ body {
 .testimonials-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 1.2rem 6.2rem;
+  padding: 1.2rem 4.2rem;
   gap: 2.4rem;
   max-width: 120rem;
   margin: 0 auto;
@@ -842,7 +836,6 @@ body {
   transform: rotate(180deg);
 }
 
-
 .testimonial-text {
   font-size: 1.4rem;
   line-height: 1.6;
@@ -858,4 +851,170 @@ body {
   gap: 0.4rem;
   color: #00b10c;
   /* padding-top: 0.6rem; */
+}
+
+/* ***************** */
+/* Contact Us */
+/* ***************** */
+
+.contact-us-section {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 2.4rem 6.2rem;
+  display: block;
+  align-items: center;
+  background-color: #e3feec;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2.4rem 1.2rem;
+ 
+}
+
+.cta-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cta-left h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.cta-left p {
+  font-size: 5.2rem;
+  padding: 1.2rem 0;
+  font-weight: 350;
+}
+.cta-left p span {
+  color: #00b10c;
+  font-weight: 450;
+}
+
+.socials{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1.2rem 0;
+  gap: 2.4rem;
+}
+
+.email i,
+.whatsapp i,
+.call i{
+background-color: #00b10c;
+color: #fff;
+padding: 0.6rem 0.6rem;
+border-radius: 5px;
+font-weight: 700;
+font-size: 1.6rem;
+}
+
+.email,
+.whatsapp,
+.call{
+  display: flex;
+}
+
+.social-description{
+  padding: 0 0.5rem;
+}
+
+.social-description h3{
+  font-size: 1.2rem;
+}
+
+.social-description p{
+  margin-top: -1rem;
+  font-size: 1.2rem;
+  padding-bottom: 0;
+  font-weight: 400;
+}
+
+/* ***************** */
+/* Contact Form */
+/* ***************** */
+
+.cta-right form {
+  background-color: #f0fef5; /* matches section backgrounds */
+  padding: 2.4rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.cta-right fieldset {
+  border: none;
+  padding: 0;
+}
+
+.cta-right legend {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #1f4b2c;
+  margin-bottom: 1.6rem;
+  text-align: center;
+}
+
+.cta-right label {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #1f4b2c;
+  margin: 1rem 0;
+  display: block;
+}
+
+.cta-right input,
+.cta-right textarea {
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #d1d5db; /* soft gray */
+  font-size: 1.4rem;
+  outline: none;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.cta-right input:focus,
+.cta-right textarea:focus {
+  border-color: #00b10c;
+  box-shadow: 0 0 0 3px rgba(0, 177, 12, 0.2);
+}
+
+.cta-right textarea {
+  resize: vertical;
+  min-height: 10rem;
+}
+
+.cta-right button {
+  align-self: flex-start;
+  padding: 1.2rem 2.4rem;
+  border-radius: 8px;
+  margin-top: 1.2rem;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: #00b10c;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-right i{
+  padding-left: 5px;
+  color: #e3feec;
+  
+  border-radius: 50%;
+  height: auto;
+  font-weight: 600;
+}
+.cta-right button:hover {
+  background-color: #1f4b2c;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
