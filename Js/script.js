@@ -86,4 +86,6 @@ roleItems.forEach((item) => {
   roleObserver.observe(item);
 });
 
-// MODAL 
+// Date
+document.getElementById("year").textContent = new Date().getFullYear();
+
