@@ -38,11 +38,35 @@
             </li>
           </ul>
         </nav>
-        <button class="mobile-nav-menu">
+        <button class="mobile-nav-menu" id="mobileMenuBtn">
           <i class="bi bi-three-dots-vertical"></i>
         </button>
       </div>
     </header>
+
+    <div class="mobile-drawer-overlay" id="drawerOverlay"></div>
+
+    <!-- Mobile Drawer Navigation -->
+    <nav class="mobile-drawer" id="mobileDrawer">
+      <div class="drawer-header">
+        <h3>Herbal Haven</h3>
+        <button class="drawer-close-btn" id="drawerCloseBtn">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <ul class="mobile-nav-list">
+        <li><a class="mobile-nav-link" href="#hero">Home</a></li>
+        <li><a class="mobile-nav-link" href="#about">About</a></li>
+        <li><a class="mobile-nav-link" href="#products">Products</a></li>
+        <li>
+          <a class="mobile-nav-link" href="#testimonials">Testimonials</a>
+        </li>
+        <li>
+          <a class="mobile-nav-link mobile-nav-cta" href="#cta">Place order</a>
+        </li>
+      </ul>
+    </nav>
 
     <main>
       <section class="section-hero" id="hero">
@@ -563,7 +587,6 @@
           <div class="cta-right">
             <form action="/submit" method="post" autocomplete="on" novalidate>
               <fieldset>
-
                 <label for="first-name">First name</label>
                 <input
                   id="first-name"
@@ -658,7 +681,9 @@
           <ul>
             <li><i class="bi bi-telephone"></i> +263 77 534 4334</li>
             <li><i class="bi bi-envelope"></i> info@herbalhaven.com</li>
-            <li><i class="bi bi-geo-alt"></i> 123 Wellness St, Health City</li>
+            <li>
+              <i class="bi bi-geo-alt"></i>Hse 287 Daisyhill, Chipinge, Zimbabwe
+            </li>
           </ul>
         </div>
       </div>
@@ -672,6 +697,34 @@
       </div>
     </section>
 
+    <!-- Floating Action Button -->
+    <div class="fab-container" id="fabContainer">
+      <!-- Main FAB Button -->
+      <button class="fab-main" id="fabMain" aria-label="Quick Actions">
+        <i class="bi bi-plus"></i>
+      </button>
+
+      <!-- Sub Actions (hidden by default) -->
+      <div class="fab-actions" id="fabActions">
+        <!-- Back to Top -->
+        <button class="fab-action" id="backToTop" aria-label="Back to Top">
+          <i class="bi bi-arrow-up"></i>
+          <span class="fab-tooltip">Back to Top</span>
+        </button>
+
+        <!-- WhatsApp -->
+        <a
+          href="https://wa.me/263775344334"
+          target="_blank"
+          class="fab-action"
+          id="whatsappFab"
+          aria-label="Chat on WhatsApp"
+        >
+          <i class="bi bi-whatsapp"></i>
+          <span class="fab-tooltip">Chat with us</span>
+        </a>
+      </div>
+    </div>
     <script src="js/script.js"></script>
   </body>
 </html>
