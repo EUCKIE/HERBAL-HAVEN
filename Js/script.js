@@ -235,3 +235,88 @@ document.addEventListener('DOMContentLoaded', function() {
   handleScroll();
 });
 
+
+// Contact Form with EmailJS Integration and Validation
+// Initialize EmailJS with your public key
+        (function() {
+            emailjs.init("kf9R1lst7Uofy_OUJ"); 
+        })();
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contact-form');
+            const messageTextarea = document.getElementById('message');
+            const charCount = document.getElementById('char-count');
+            const successMessage = document.getElementById('success-message');
+            
+            // Character count for message textarea
+            messageTextarea.addEventListener('input', function() {
+                const length = this.value.length;
+                charCount.textContent = length;
+                
+                if (length > 1000) {
+                    this.value = this.value.substring(0, 1000);
+                    charCount.textContent = 1000;
+                }
+            });
+            
+            // Form validation and submission
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Reset error messages
+                const errorElements = document.querySelectorAll('.error');
+                errorElements.forEach(el => el.style.display = 'none');
+                
+                let isValid = true;
+                
+                // Validate first name
+                const firstName = document.getElementById('first-name').value.trim();
+                if (!firstName) {
+                    document.getElementById('first-name-error').style.display = 'block';
+                    isValid = false;
+                }
+                
+                // Validate last name
+                const lastName = document.getElementById('last-name').value.trim();
+                if (!lastName) {
+                    document.getElementById('last-name-error').style.display = 'block';
+                    isValid = false;
+                }
+                
+                // Validate email
+                const email = document.getElementById('email').value.trim();
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!email || !emailPattern.test(email)) {
+                    document.getElementById('email-error').style.display = 'block';
+                    isValid = false;
+                }
+                
+                // Validate message
+                const message = document.getElementById('message').value.trim();
+                if (!message) {
+                    document.getElementById('message-error').style.display = 'block';
+                    isValid = false;
+                }
+                
+                if (isValid) {
+                    // Send email using EmailJS
+                    emailjs.sendForm('service_5pngxel', 'template_37ze8az', this)
+                        .then(function() {
+                            // Show success message
+                            successMessage.style.display = 'block';
+                            
+                            // Reset form
+                            form.reset();
+                            charCount.textContent = '0';
+                            
+                            // Hide success message after 5 seconds
+                            setTimeout(() => {
+                                successMessage.style.display = 'none';
+                            }, 5000);
+                        }, function(error) {
+                            alert('Sorry, something went wrong. Please try again later.');
+                            console.error('EmailJS Error:', error);
+                        });
+                }
+            });
+        });
