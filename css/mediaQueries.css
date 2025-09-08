@@ -4,7 +4,6 @@
 @media (max-width: 30em) {
   html {
     font-size: 50%; /* Smaller font scaling */
-    
   }
 
   .header {
@@ -44,13 +43,13 @@
     padding: 2.4rem 0 1.2rem 0;
   }
   .about {
-    padding: 0 0.4rem;
+    padding: 0 0.2rem;
   }
   .about-banner h2 {
     padding: 1.2rem;
     font-size: 3.2rem;
   }
-  .story {
+  .about-story .story {
     font-size: 1.6rem;
     line-height: normal;
     padding: 0.6rem 0.2rem;
@@ -74,6 +73,8 @@
   .vision-mission {
     display: flex;
     flex-direction: column;
+    gap: 1.2rem;
+    padding: 0.2rem;
   }
   .mission h2,
   .vision h2 {
@@ -85,26 +86,26 @@
     line-height: normal;
     text-align: center;
   }
-  
+
   /* Values section */
   .values {
     grid-template-columns: 1fr;
     margin: 2.4rem 0.4rem;
   }
-  
+
   .values-image-box img {
     height: 40vh;
     border-radius: 10px 10px 0 0;
   }
-  
+
   .values-heading {
     font-size: 3.2rem;
   }
-  
+
   .value-item h2 {
     font-size: 1.8rem;
   }
-  
+
   .value-item p {
     font-size: 1.4rem;
   }
@@ -125,7 +126,7 @@
   }
 
   .logo {
-    padding-left:0.2rem ;
+    padding-left: 0.2rem;
     /* margin-top: -1rem; */
     height: 7.4rem;
   }
@@ -171,7 +172,7 @@
     width: 85%;
     max-width: 32rem;
   }
-  
+
   /* Names section */
   .names-list {
     gap: 2rem;
@@ -179,17 +180,78 @@
     font-size: 1.2rem;
   }
 
-  .product-description .description{
+  .products-banner h1 {
+    font-size: 3.2rem;
+    padding: 1.2rem;
+  }
+
+  .product-description .description {
     font-size: 1.6rem;
   }
+  .products {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    padding: 0 1.6rem;
+  }
+
   /* Testimonials */
 
+  .testimonials-section {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+  .testimonial-quote i {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    margin-left: 22rem;
+  }
+
+  .testimonials-banner h2 {
+    font-size: 3.2rem;
+    padding: 1.2rem;
+  }
 
   .testimonials-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 4rem;
+    padding: 0 1.6rem;
   }
+  .contact-us-section {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .cta {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .cta-left {
+    text-align: center;
+    margin-bottom: 2.4rem;
+  }
+  .cta-left p{
+    font-size : 2.4rem;
+    text-align: center;
+  }
+
+  #contact-hook {
+    font-weight: 700;
+  }
+  .socials{
+    display: none;
+  }
+   
+  }
+
+  .social-description p {
+  margin-top: -1rem;
+  font-size: 1.2rem;
+  padding-bottom: 0;
+  font-weight: 400;
+}
+
+
+
 }
 
 /**************************/
@@ -228,31 +290,30 @@
     width: 70%;
     margin: 0 auto;
   }
-  
+
   /* About section */
   .roles {
     grid-template-columns: 1fr;
     gap: 1.6rem;
   }
-  
+
   .vision-mission {
     grid-template-columns: 1fr;
     gap: 1.6rem;
   }
-  
+
   .values {
     grid-template-columns: 1fr;
   }
-  
+
   .values-image-box img {
     height: 50vh;
     border-radius: 10px 10px 0 0;
   }
-  .products{
+  .products {
     display: grid;
     grid-template-columns: 1fr;
   }
-  
 }
 
 /********************************/
@@ -274,13 +335,13 @@
   .hero-description {
     font-size: 1.9rem;
   }
-  
+
   /* About section */
   .about {
     padding: 0 3.2rem;
   }
-  
+
   .roles {
-    grid-template-columns: repeat( 1fr);
+    grid-template-columns: repeat(1fr);
   }
 }
