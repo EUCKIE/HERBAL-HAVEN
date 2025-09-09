@@ -376,62 +376,13 @@ body {
   color: #00b10c;
 }
 
-/**************************/
-/* NAMES SCROLL SECTION */
-/**************************/
-.section-names {
-  background-color: #00b10c;
-  display: block;
-  overflow: hidden; /* hides overflow */
-  padding: 1rem 0;
-}
 
-.section-names .container {
-  display: flex;
-  width: max-content; /* container grows with content */
-  animation: scroll-left 40s linear infinite;
-}
-
-.names-list {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 4rem;
-  padding: 1rem 4.8rem;
-  font-weight: 500;
-  font-size: 1.4rem;
-  white-space: nowrap;
-  color: #e3feec;
-  margin: 0;
-}
-.names-list:last-child {
-  padding: 0;
-}
-
-.names-list li {
-  transition: all 0.3s;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-}
-
-.names-list li:hover {
-  transform: translateY(-2px);
-}
-
-@keyframes scroll-left {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
 
 /**************************/
 /* ABOUT SECTION */
 /**************************/
 .section-about {
-  padding: 4.8rem 0 4rem 0;
+  padding: 0.8rem 0 1.2rem 0;
   background-color: #f0fef5;
 }
 .about {
@@ -445,7 +396,7 @@ body {
 .about-banner {
   display: block;
   text-align: center;
-  margin-bottom: 4.8rem;
+  margin-bottom: 0.8rem;
 }
 .about-banner h2 {
   padding: 2.4rem;
@@ -459,7 +410,7 @@ body {
 .about-story {
   display: flex;
   flex-direction: column;
-  padding: 1.2rem;
+  padding: 0.2rem;
   margin: 0 rem;
   align-items: center;
 }

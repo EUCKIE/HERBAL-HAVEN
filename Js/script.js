@@ -17,6 +17,8 @@ const observer = new IntersectionObserver(
 
 observer.observe(hero);
 
+
+
 // Animation for value items when they come into view
 const valueItems = document.querySelectorAll(".value-item");
 
